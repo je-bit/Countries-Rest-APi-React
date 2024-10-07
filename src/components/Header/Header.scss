@@ -1,0 +1,52 @@
+@import "@/styles/fontsTypography";
+@import "@/styles/colors";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--containers-background-color);
+  height: 80px;
+  box-shadow: var(--header-shadow);
+  .title {
+    font-size: 24px;
+    margin: 24px 0 24px 80px;
+    font-weight: 800;
+    color: var(--text-color);
+  }
+  .switch {
+    display: flex;
+    align-items: center;
+    margin: 29px 80px 29px 0;
+    border: none;
+    background-color: var(--containers-background-color);
+    color: var(--text-color);
+    cursor: pointer;
+    .icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+    .dark-mode {
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+}
+
+//media
+@media screen and (orientation: portrait) {
+  .header {
+    .title {
+      font-size: 14px;
+      margin: 30px 0 30px 16px;
+    }
+    .switch {
+      margin: 31px 16px 31px 0;
+      .dark-mode {
+        font-size: 12px;
+      }
+    }
+  }
+}
