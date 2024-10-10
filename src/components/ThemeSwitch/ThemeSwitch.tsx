@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import iconSunny from "../../assets/icon-sunny.svg";
 import iconMoon from "../../assets/icon-moon.svg";
 
-const ThemeSwitch: React.FC = () => {
+export const ThemeSwitch: React.FC = () => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
 
   useEffect(() => {
@@ -29,5 +29,3 @@ const ThemeSwitch: React.FC = () => {
     </button>
   );
 };
-
-export default ThemeSwitch;

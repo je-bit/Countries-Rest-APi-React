@@ -1,8 +1,8 @@
 import React from "react";
-import ThemeSwitch from "@/components/ThemeSwitch/ThemeSwitch";
+import { ThemeSwitch } from "@/components/ThemeSwitch";
 import "./Header.scss";
 
-const Header: React.FC = () => {
+export const Header: React.FC = () => {
   return (
     <header className="header">
       <p className="title">Where in the world?</p>
@@ -10,5 +10,3 @@ const Header: React.FC = () => {
     </header>
   );
 };
-
-export default Header;

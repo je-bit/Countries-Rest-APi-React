@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import arrowBack from "../assets/arrow-back.svg";
-import "./countryInfoStyle.scss";
+import "./CountryInfo.scss";
 
 interface Country {
   name: string;
@@ -18,7 +18,7 @@ interface Country {
   borders: string[];
 }
 
-const CountryInfo: React.FC = () => {
+export const CountryInfo: React.FC = () => {
   const { countryName } = useParams<{ countryName: string }>();
   const [country, setCountry] = useState<Country | null>(null);
 
@@ -131,5 +131,3 @@ const CountryInfo: React.FC = () => {
     </>
   );
 };
-
-export default CountryInfo;

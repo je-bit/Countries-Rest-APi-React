@@ -17,6 +17,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 48px 0 48px 0;
+  gap: 1rem;
   .search-bar {
     margin-left: 80px;
     width: 480px;
@@ -26,14 +27,13 @@ body {
     box-shadow: var(--shadow-light);
     display: flex;
     align-items: center;
-    cursor: pointer;
     .icon-search {
       width: 18px;
       height: 18px;
       margin-left: 32px;
     }
     .search-input {
-      width: 136px;
+      width: 100%;
       height: 20px;
       margin-left: 24px;
       font-size: 14px;
@@ -78,6 +78,28 @@ body {
       font-size: 14px;
       padding: 15px 0 15px 24px;
       cursor: pointer;
+    }
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    .search-bar {
+      margin: 24px 16px 40px 16px;
+      width: 343px;
+      height: 48px;
+      .search-input {
+        height: 20px;
+      }
+    }
+
+    .custom-select {
+      width: 200px;
+      margin: 0 0 32px 16px;
     }
   }
 }

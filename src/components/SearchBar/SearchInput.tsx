@@ -4,7 +4,7 @@ interface SearchInputProps {
   onSearch: (term: string) => void;
 }
 
-const SearchInput: React.FC<SearchInputProps> = ({ onSearch }) => {
+export const SearchInput: React.FC<SearchInputProps> = ({ onSearch }) => {
   return (
     <div className="search-bar">
       <img src="./src/assets/icon-search.svg" className="icon-search" />
@@ -17,5 +17,3 @@ const SearchInput: React.FC<SearchInputProps> = ({ onSearch }) => {
     </div>
   );
 };
-
-export default SearchInput;

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./cardsStyle.scss";
+import "./CardsCountries.scss";
 
 interface CardProps {
   country: {
@@ -12,7 +12,7 @@ interface CardProps {
   };
 }
 
-const Card: React.FC<CardProps> = ({ country }) => {
+export const Card: React.FC<CardProps> = ({ country }) => {
   return (
     <div className="card">
       <Link to={`/country/${country.name}`}>
@@ -33,4 +33,3 @@ const Card: React.FC<CardProps> = ({ country }) => {
     </div>
   );
 };
-export default Card;
